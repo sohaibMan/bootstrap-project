@@ -11170,3 +11170,21 @@ a {
 .nav-item :hover {
   color: #e9ecef !important;
 }
+
+.hero {
+  height: 65vh;
+  width: 100%;
+}
+.hero-right {
+  background-image: url("../../img/showcase.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  height: 12vh;
+}
+.form-right {
+  height: 7vh;
+  width: 30vw;
+}

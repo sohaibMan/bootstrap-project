@@ -1,0 +1,10 @@
+.hero{
+    height:65vh;
+    width: 100%;
+    &-right{
+   background-image:url("../../img/showcase.svg");
+    background-size:cover;
+   background-repeat: no-repeat;
+
+    }
+}
