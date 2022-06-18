@@ -11180,6 +11180,11 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.hero-right-2 {
+  background-image: url("/../img/fundamentals.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
 
 .form {
   height: 12vh;
