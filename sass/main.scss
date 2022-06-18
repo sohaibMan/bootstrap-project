@@ -31,16 +31,18 @@
 
 
 
-
+@import "../sass/variables";// to custome bootstrap u should declrate before it
 
 //? import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../sass/init";
-@import "../sass/variables";
+
 @import "../sass/nav";
 @import "../sass/hero";
 @import "../sass/form";
 @import "../sass/cards";
+@import "../sass/accordion";
+
 
 
 

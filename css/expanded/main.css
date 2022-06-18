@@ -4568,7 +4568,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 2rem 1.25rem;
   font-size: 1rem;
   color: #212529;
   text-align: left;
@@ -4651,7 +4651,7 @@ textarea.form-control-lg {
 }
 
 .accordion-body {
-  padding: 1rem 1.25rem;
+  padding: 2rem 1.25rem;
 }
 
 .accordion-flush .accordion-collapse {
@@ -11175,15 +11175,13 @@ a {
   height: 65vh;
   width: 100%;
 }
-.hero-right {
-  background-image: url("/../img/showcase.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.hero-right img {
+  height: 100%;
+  width: 100%;
 }
-.hero-right-2 {
-  background-image: url("/../img/fundamentals.svg");
-  background-size: 70%;
-  background-repeat: no-repeat;
+.hero-right-2 img {
+  height: 100%;
+  width: 100%;
 }
 
 .form {
@@ -11205,4 +11203,11 @@ a {
     width: 50vw;
     margin: 10vh auto !important;
   }
+}
+
+.accordion {
+  width: 75vw;
+}
+.accordion-header button {
+  font-size: 2rem;
 }
