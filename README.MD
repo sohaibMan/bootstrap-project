@@ -1,7 +1,7 @@
 USE purgecss --help for more details 
 
 
-purgecss -css css/expanded/main.css --content *.html  --output css 
+purgecss -css css/expanded/main.css --content *.html  *.js --output css 
 
  while building the project   u should keep the css/expanded/main.css file as the main css file (under compling with sass)
 
