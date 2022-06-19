@@ -265,6 +265,10 @@ button:not(:disabled),
   -webkit-appearance: button;
 }
 
+iframe {
+  border: 0;
+}
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -342,6 +346,9 @@ button:not(:disabled),
   }
 }
 @media (min-width: 768px) {
+  .col-md {
+    flex: 1 0 0%;
+  }
 
   .col-md-6 {
     flex: 0 0 auto;
@@ -703,6 +710,20 @@ button:not(:disabled),
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+.card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
 
 .card-body {
   flex: 1 1 auto;
@@ -832,6 +853,49 @@ button:not(:disabled),
   }
 }
 
+.list-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-radius: 0.25rem;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.list-group-item:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.list-group-item:last-child {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+ .list-group-item:disabled {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+}
+.list-group-item + .list-group-item {
+  border-top-width: 0;
+}
+.list-group-flush {
+  border-radius: 0;
+}
+.list-group-flush > .list-group-item {
+  border-width: 0 0 1px;
+}
+.list-group-flush > .list-group-item:last-child {
+  border-bottom-width: 0;
+}
+
 /* rtl:begin:ignore */
 
 /* rtl:end:ignore */
@@ -894,6 +958,26 @@ button:not(:disabled),
 
 .d-flex {
   display: flex !important;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.bottom-0 {
+  bottom: 0 !important;
+}
+
+.end-0 {
+  right: 0 !important;
+}
+
+.border {
+  border: 1px solid #dee2e6 !important;
 }
 
 .flex-column {
@@ -1003,6 +1087,10 @@ button:not(:disabled),
 
 .ps-5 {
   padding-left: 3rem !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
 }
 
 .lh-base {
