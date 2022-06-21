@@ -8,7 +8,7 @@
 
 //  now we can accees to themese colors
 // $custome-colors:( 
-//         "new": #28b485, //primary-color-dark
+    //         "new": #28b485, //primary-color-dark
 //         "0":#55c57a, //primary-color
 //         "1": #7ed56f,  //primary-color-lighter
 //         "3": #777,  //grey
@@ -21,10 +21,10 @@
 //         "10":#69db7c80,//card color 2 lighter
 //         "11":#66d9e8,//card color 3
 //         "12":#66d9e880//card color 3 lighter
-        
+
 //         // use map-get($colors,nbofcolor)
 //         //for example  color: map-get($colors,"5")
-    
+
 
 // );
 // $theme-colors:map-merge($theme-colors,$custome-colors);
@@ -35,6 +35,7 @@
 
 //? import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../sass/darkmood";
 @import "../sass/init";
 
 @import "../sass/nav";
@@ -42,6 +43,7 @@
 @import "../sass/form";
 @import "../sass/cards";
 @import "../sass/accordion";
+
 
 
 

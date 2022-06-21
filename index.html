@@ -9,18 +9,22 @@
     <title> Frontend Bootcamp</title>
 
     <!-- !first option -->
-    <!-- <link rel="stylesheet" href="css/compressed/main.css"> -->
+    <!-- <link rel="stylesheet" href="css/expanded/main.css"> -->
+   
+    <link rel="stylesheet" href="css/compressed/main.css"> 
     <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
     <!-- !seconde option -->
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <!-- use the second option in the end  -->
   
-    <script src="script/script.js"></script>
+  <script src="script/script.js"></script>
+
     
 </head>
 <body>
 
 <nav class="navbar navbar-expand-md bg-dark sticky-top py-2">
+  
     <div class="container-fluid mx-5 ">
         
        <a href="#" class="navbar-brand  text-white">
@@ -54,7 +58,22 @@
 <main>
 
 <section class="hero d-flex pt-5  bg-dark">
-
+  <div class="toggleWrapper">
+    <input type="checkbox"   class="dn"  id="dn">
+    <label for="dn" class="toggle">
+        <span class="toggle__handler">
+            <span class="crater crater--1"></span>
+            <span class="crater crater--2"></span>
+            <span class="crater crater--3"></span>
+        </span>
+        <span class="star star--1"></span>
+        <span class="star star--2"></span>
+        <span class="star star--3"></span>
+        <span class="star star--4"></span>
+        <span class="star star--5"></span>
+        <span class="star star--6"></span>
+    </label>
+  </div>
 
     <div class="col pt-5 ps-5 hero-left text-white ">
       <h1 class="mb-5">Become a
@@ -140,8 +159,8 @@
      </h1>
 
      <p class="h3 lh-base">We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role</p>
-<button class="btn btn-primary  btn-lg mt-5 py-3 px-5">
-<h4>  Start The Enrollment</h4>
+<button class="fix_btn btn btn-primary  btn-lg mt-5 py-3 px-5">
+<h4>  Start  The Enrollment</h4>
 
 </button>
 
@@ -177,7 +196,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis eius
 
 
 </section>
-<section id="question" class="container m-5">
+<section id="question" class="container my-5 ">
 <h1 class="m-5 text-center">
   Frequently Asked Questions
 </h1>
@@ -315,7 +334,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis eius
   </div>
 </section>
 <section class="info container">
-  <section class="p-5">
+  <section class="p-5 contact">
     <div class="container">
       <div class="row g-4">
         <div class="col-md">
@@ -362,7 +381,7 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque reiciendis eius
 
 
 
-
+  <script src="script/night_mood.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
