@@ -1,5 +1,4 @@
-USE purgecss --help for more details 
-
+USE purgecss --help for more details .
 
 purgecss -css css/expanded/main.css --content *.html  *.js --output css 
 
